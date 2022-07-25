@@ -80,6 +80,10 @@ a {
     border: none;
 }
 
+.primary-btn:hover > button i {
+    color: ;
+}
+
 .secondary-btn {
     padding: 11px 38px;
     background: #181818;
@@ -96,6 +100,10 @@ a {
     background: #ffff;
     color: #181818;
     border: 1px solid #181818;
+}
+
+.secondary-btn:hover > i {
+    color: #181818;
 }
 
 .layer-wrapper {
