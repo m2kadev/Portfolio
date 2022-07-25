@@ -1,0 +1,140 @@
+@media (max-width: 1068px) {
+
+    :root {
+        --banner-heading: 2.5rem;
+        --banner-para: 1rem;
+    }
+    
+    /* content box */
+
+    .content span {
+        font-size: 0.8rem;
+    }
+
+    .content-box {
+        justify-content: flex-start;
+        padding-left: 16%;
+    }
+
+    .content {
+        width: 60%;
+    }
+
+    /* blog card */
+
+    .blog-card {
+        height: 250px;
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+
+    .cell1::before, 
+    .cell2::before,
+    .cell3::before,
+    .cell4::before
+    {
+        font-size: 0.8rem;
+        padding: 0%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .blog-card {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* about section */
+
+    .about-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .about-box .about-left, .about-box .about-right {
+        width: 68% !important;
+    }
+
+    .about-left p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .about-right .progress-bars {
+        padding-left: 0%;
+        margin-top: 50px;
+    }
+
+    .progress-bars p {
+        font-size: 0.8rem;
+    }
+
+    /* portfolio section */
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .portfolio-left, .portfolio-right {
+        width: 68% !important;
+    }
+
+    .portfolio-box a {
+        font-size: 1rem;
+    }
+
+    .btn-box {
+        margin-top: 50px;
+    }
+
+    /* quote section */
+
+    .quote {
+        width: 68%;
+    }
+
+    .quote p {
+        font-size: 1rem;
+    }
+
+    .quote span {
+        font-size: 0.8rem;
+    }
+
+    .quote::before, .quote::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* achievement section */
+
+
+
+    .achievements .achievement {
+        width: 40%;
+    }
+
+    .achievement p {
+        font-size: 1rem;
+    }
+
+    .achievement span {
+        font-size: 0.8rem;
+    }
+
+    /* subscribe section */
+
+    .s-box-2, .s-box-3 {
+        padding-left: 10px;
+    }
+
+}
