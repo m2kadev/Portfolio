@@ -436,6 +436,12 @@
         padding-top: 50px;
      }
 
+     /* subscribe section */
+
+     .s-box-1 {
+        width: 100% !important;
+     }
+
 
     .achievements .achievement {
         width: 90%;
