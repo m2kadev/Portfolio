@@ -251,7 +251,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 79px;
+    padding: 15px 79px;
     z-index: 999;
     transition: 0.5s ease-in;
 }
