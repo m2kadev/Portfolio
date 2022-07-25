@@ -3,6 +3,7 @@
     :root {
         --banner-heading: 2.5rem;
         --banner-para: 1rem;
+        --layer-f: 2.7rem;
     }
     
     /* content box */
@@ -35,14 +36,15 @@
     .cell1::before, 
     .cell2::before,
     .cell3::before,
-    .cell4::before
+    .cell4::before,
+    .cell5::before
     {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 0%;
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .blog-card {
@@ -51,6 +53,48 @@
 }
 
 @media (max-width: 768px) {
+
+    .primary-btn {
+        font-size: 0.7rem;
+    }
+
+    /* nav bar */
+
+    .navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-icon {
+        width: 25px;
+        height: 20px;
+    }
+
+    .line2 {
+        margin-top: 5px;
+    }
+
+    .line3 {
+        margin-top: 5px;
+    }
+
+    /* content section */
+
+    .content-box {
+        padding-left: 5%;
+    }
+
+    .content span {
+        font-size: 0.7rem;
+    }
+
+    .content .banner-para {
+        font-size: 0.8rem;
+    }
+
+    .content .banner-heading {
+        font-weight: 600 !important;
+    }
 
     /* about section */
 
@@ -100,14 +144,16 @@
 
     .quote {
         width: 68%;
+        padding: 50px 0;
     }
 
     .quote h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .quote p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
     }
 
     .quote span {
@@ -124,18 +170,22 @@
 
 
     .achievements .achievement {
-        width: 40%;
+        width: 45%;
     }
 
     .achievement p {
-        font-size: 0.9rem;
-    }
-
-    .achievement span {
         font-size: 0.8rem;
     }
 
+    .achievement span {
+        font-size: 0.7rem;
+    }
+
     /* blogs section */
+
+    #blogsWrapper {
+        padding: 100px 8%;
+    }
 
     .blog-cards {
         justify-content: center;
@@ -151,11 +201,16 @@
         font-size: 1rem;
     }
 
+    .blogs-link a {
+        font-size: 0.7rem;
+    }
+
     /* testimonials section */
 
     #testimonialWrapper {
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 0px;
     }
 
     .owl-testimonial {
@@ -164,19 +219,245 @@
     }
 
     .testimonial-items p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
     }
 
     .user .user-img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .user span {
+        font-size: 0.6rem;
     }
 
 
     /* subscribe section */
 
+    #subscribeWrapper h1 {
+        font-size: 1.3rem;
+    }
+
+    .subscribe {
+        gap: 30px;
+    }
+
     .s-box-2, .s-box-3 {
         padding-left: 10px;
+    }
+
+    .subscribe-box {
+        width: 45% !important;
+    }
+
+    .s-box-2, .s-box-3 {
+        padding: 0;
+    }
+
+    .subscribe-box button {
+        font-size: 0.7rem;
+    }
+
+    .subscribe-box form div input {
+        font-size: 0.7rem;
+    }
+
+    .subscribe-box p {
+        font-size: 0.7rem;
+    }
+
+    .subscribe-box ul li {
+        line-height: 1.5rem;
+    }
+
+    .subscribe-box ul li a{
+        font-size: 0.7rem;
+    }
+
+    .subscribe-box .gmail {
+        font-size: 1rem;
+    }
+
+    /* footer section */
+
+    .footer .footer-left a {
+        padding-right: 10px;
+    }
+
+    .footer .footer-left a i {
+        font-size: 0.7rem;
+    }
+
+    .footer-right {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 521px) {
+    
+    .content .banner-heading {
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+
+    /* about section */
+
+    #aboutWrapper {
+        padding: 50px 20px 0;
+    }
+
+    .about-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .about-box .about-left, .about-box .about-right {
+        width: 90% !important;
+    }
+
+    .about-left p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .about-right .progress-bars {
+        padding-left: 0%;
+        margin-top: 50px;
+    }
+
+    .progress-bars p {
+        font-size: 0.8rem;
+    }
+
+    /* quote section */
+
+    #quoteWrapper {
+        margin-top: 0 !important;
+    }
+
+    .quote {
+        width: 75%;
+        padding: 50px 0;
+    }
+
+    .quote::before, .quote::after {
+        width: 50px !important; 
+        height: 50px !important;
+    }
+
+    .quote::before {
+        top: 30px;
+        left: 5px;
+    }
+
+    .quote::after {
+        bottom: 40px;
+    }
+
+    .quote h1 {
+        font-size: 1.5rem;
+    }
+
+    .quote p {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+
+    .quote span {
+        font-size: 0.8rem;
+    }
+
+    .quote::before, .quote::after {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* portfolio section */
+
+    #portfolioWrapper {
+        padding: 50px 20px;
+    }
+
+    .portfolio-left, .portfolio-right {
+        width: 90% !important;
+    }
+
+    /* blogs section */
+
+    #blogsWrapper {
+        padding: 100px 8%;
+    }
+
+    .blog-cards {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .blog-card {
+        width: 90%;
+        height: 350px;
+    }
+
+
+     /* achievement section */
+
+     #achievementWrapper {
+        padding-top: 50px;
+     }
+
+     /* blogs section */
+
+     #blogsWrapper {
+        padding-top: 50px;
+     }
+
+     /* testimonial section */
+
+     #testimonialWrapper {
+        padding-top: 50px;
+     }
+
+
+    .achievements .achievement {
+        width: 90%;
+    }
+
+
+    #footerWrapper {
+        padding: 20px 5px;
+    }
+
+    .footer .footer-left a {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* content section */
+    .content {
+        width: 90%;
+    }
+
+    .content-box {
+        padding-left: 5%;
+    }
+
+    .content span {
+        font-size: 0.6rem;
+    }
+
+    .content .banner-para {
+        font-size: 0.7rem;
+        padding-right: 50px;
+    }
+
+    .content .banner-heading {
+        font-weight: 600 !important;
+        font-size: 1.8rem;
     }
 
 }

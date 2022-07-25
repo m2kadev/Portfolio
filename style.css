@@ -658,7 +658,7 @@ a {
     display: flex;
     align-items: center;
     padding: 80px 16vw 80px;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     flex-direction: column;
     background: #000;
     background: url(images/testimonial-bg.png), linear-gradient(#1a1a1a, #1a1a1a);
@@ -750,7 +750,7 @@ a {
 }
 
 #subscribeWrapper > span {
-    color: var(--filter-color);
+    color: var(--filter-color) !important;
 }
 
 
