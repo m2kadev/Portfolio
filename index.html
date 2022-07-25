@@ -415,6 +415,30 @@
 
     <script>
 
+        $(document).ready(function(){
+
+
+            $(window).bind('scroll', function(){
+
+                var gap = 700;
+                if($(window).scrollTop() > gap){
+                    $('.navbar').addClass('navbg');
+                }else {
+                    $('.navbar').removeClass('navbg');
+                } 
+
+            });
+
+            /*
+            $('.nav-icon').clickToggle(function(){
+                $('.nav-icon .line1').css({"transform": "rotate(45deg)"});
+
+            })*/
+
+        });
+
+
+
         $('.owl-testimonial').owlCarousel({
                 loop: false,
                 margin: 10,
@@ -423,7 +447,7 @@
                 dots: false,
                 items: 1
                 
-            })
+            });
     </script>
 
 </body>

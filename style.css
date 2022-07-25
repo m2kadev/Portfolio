@@ -80,10 +80,6 @@ a {
     border: none;
 }
 
-.primary-btn:hover > button i {
-    color: ;
-}
-
 .secondary-btn {
     padding: 11px 38px;
     background: #181818;
@@ -249,12 +245,25 @@ a {
 }
 
 .navbar {
-    position: absolute;
-    top: 7vh;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 0 79px;
+    padding: 10px 79px;
+    z-index: 999;
+    transition: 0.5s ease-in;
+}
+
+.navbg {
+    background-color: #000 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+            0 2px 4px rgba(0, 0, 0, 0.07),
+            0 4px 8px rgba(0, 0, 0, 0.07),
+            0 8px 16px rgba(0, 0, 0, 0.07),
+            0 16px 32px rgba(0, 0, 0, 0.07),
+            0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
 .logo {
@@ -286,17 +295,35 @@ a {
 
 .line1 {
     width: 80%;
+    transition: 0.3s;
 }
 
 .line2 {
     width: 90%;
     margin-top: 7px;
+    
 }
 
 .line3 {
     width: 85%;
     margin-top: 7px;
+    transition: 0.3s;
 }
+
+.nav-icon:hover .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-icon:hover .line2 {
+    display: none !important;
+}
+
+.nav-icon:hover .line3 {
+    transform: rotate(135deg);
+    margin-top: 1px !important;
+} 
+
+
 
 /* content box */
 
