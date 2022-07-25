@@ -1,9 +1,22 @@
+@media (max-width: 1200px) {
+    :root {
+        --banner-para: 0.9rem;
+    }
+
+    .primary-btn {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
 @media (max-width: 1068px) {
 
     :root {
         --banner-heading: 2.5rem;
-        --banner-para: 1rem;
-        --layer-f: 2.7rem;
+        --banner-para: 0.8rem;
+        --layer-f: 2.5rem;
     }
     
     /* content box */
@@ -12,13 +25,17 @@
         font-size: 0.8rem;
     }
 
+    .content .banner-para {
+        padding-right: 100px;
+    }
+
     .content-box {
         justify-content: flex-start;
         padding-left: 16%;
     }
 
     .content {
-        width: 60%;
+        width: 70%;
     }
 
     /* blog card */
@@ -32,6 +49,10 @@
 
 
 @media (max-width: 900px) {
+
+    .primary-btn {
+        font-size: 0.8rem;
+    }
 
     .cell1::before, 
     .cell2::before,
@@ -369,11 +390,6 @@
         font-size: 0.8rem;
     }
 
-    .quote::before, .quote::after {
-        width: 100px;
-        height: 100px;
-    }
-
 
     /* portfolio section */
 
@@ -439,7 +455,7 @@
 
     /* content section */
     .content {
-        width: 90%;
+        width: 95%;
     }
 
     .content-box {
@@ -452,12 +468,50 @@
 
     .content .banner-para {
         font-size: 0.7rem;
-        padding-right: 50px;
+        padding-right: 50px !important;
     }
 
     .content .banner-heading {
         font-weight: 600 !important;
         font-size: 1.8rem;
+    }
+
+    /* quote section */
+
+    .quote {
+        width: 80%;
+        padding: 50px 0;
+    }
+
+    .quote::before, .quote::after {
+        width: 40px !important; 
+        height: 40px !important;
+    }
+
+    .quote::before {
+        top: 10px;
+        left: 2px;
+    }
+
+    .quote::after {
+        bottom: 20px;
+    }
+
+    .quote h1 {
+        font-size: 1.3rem;
+    }
+
+    .quote p {
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+
+    .quote span {
+        font-size: 0.6rem;
+    }
+
+    .testimonial-items p {
+        font-size: 0.7rem;
     }
 
 }
