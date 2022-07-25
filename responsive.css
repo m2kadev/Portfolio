@@ -89,7 +89,7 @@
     }
 
     .portfolio-box a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .btn-box {
@@ -102,8 +102,12 @@
         width: 68%;
     }
 
+    .quote h1 {
+        font-size: 2.5rem;
+    }
+
     .quote p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .quote span {
@@ -124,12 +128,50 @@
     }
 
     .achievement p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .achievement span {
         font-size: 0.8rem;
     }
+
+    /* blogs section */
+
+    .blog-cards {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .blog-card {
+        width: 45%;
+        height: 300px;
+    }
+
+    .blog-content p{
+        font-size: 1rem;
+    }
+
+    /* testimonials section */
+
+    #testimonialWrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .owl-testimonial {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testimonial-items p {
+        font-size: 0.9rem;
+    }
+
+    .user .user-img {
+        width: 40px;
+        height: 40px;
+    }
+
 
     /* subscribe section */
 
